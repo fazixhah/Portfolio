@@ -115,8 +115,8 @@ span{
   }
   
   .home-img img:hover {
-    box-shadow: 0 0 10px 2px --main-color; /* Neon glowing effect */
-    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 10px 2px --main-color; 
+    transform: scale(1.05);
   }
   
 .home-content p{
@@ -180,67 +180,6 @@ span{
   background-color: var(--main-color);
   color: black;
 }
-
-/* .text-animation{
-  font-size: 34px;
-  font-weight: 600;
-  min-width: 280px;
-}
-
-.text-animation span{
-  position: relative;
-}
-
-.text-animation span::before{
-  content: " web devloper";
-  color: var(--main-color);
-  animation: words 20s infinite;
-}
-
-.text-animation span::after{
-    content:"";
-    background: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-  } */
-
-  /* @keyframes cursor{
-    to{
-      border-left: 2px solid var(--main-color);
-    }
-  }
-
-  @keyframes words{
-    0%,20%{
-      content:" Frontend Developer";
-    }
-    21%,40%{
-      content:"Web Developer";
-    }
-    41%,60%{
-      content:" UI/UX Designer";
-    }
-    /* 61%,80%{
-      content:" Web Devloper";
-    }
-    81%,
-    100%{
-      content:"AI Enthusiast";
-    } */
-  /* }
-
-  @keyframes typing{
-    10%,15%,30%,35%,50%,55%,70%,75%,90%{
-      width: 0;
-    }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-      width: calc(100% + 8px);
-    }
-  } */ 
   .heading {
     font-size: 8rem;
     text-align: center;
@@ -278,7 +217,7 @@ span{
     width: 5px;
     height: 100%;
     background-color: var(--main-color);
-    left: calc(50% - 2.5px); /* Center the line */
+    left: calc(50% - 2.5px); 
 }
 
 .timeline-item {
@@ -307,7 +246,7 @@ span{
     background-color: var(--main-color);
     box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
     position: absolute;
-    left: calc(50% - 10px); /* Align dots in the middle of the line */
+    left: calc(50% - 10px); 
     border-radius: 50%;
     top: 0;
     z-index: 1;
@@ -348,16 +287,16 @@ span{
     font-size: 20px;
     font-weight: 800;
     color: white;
-    margin-top: 15px; /* Added space to separate date from content */
+    margin-top: 15px; 
     padding-left: 60px;
 }
 
 .timeline-item.left .timeline-content {
-    padding-left: 60px; /* Space for the dot on the left side */
+    padding-left: 60px;
 }
 
 .timeline-item.right .timeline-content {
-    padding-right: 60px; /* Space for the dot on the right side */
+    padding-right: 60px; 
 }
 
 ::webkit-scrollbar {
@@ -564,16 +503,15 @@ span{
   grid-template-columns: repeat(1, 1fr);
 }
 }
-  /* The actual timeline (the vertical ruler) */
+  
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  /* The actual timeline (the vertical ruler) */
+ 
   .timeline::after {
-    /* content: ''; */
     position: absolute;
     width: 6px;
     background-color: var(--main-color);
@@ -582,24 +520,23 @@ span{
     left: 50%;
     margin-left: -3px;
   }
-  
-  /* Container around content */
+ 
   .container {
-    padding: 20px 50px; /* Increased padding for bigger container */
+    padding: 20px 50px; 
     position: relative;
     background-color: inherit;
     width: 50%;
     color: white;
-    font-size: 18px; /* Increased font size */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Transition for zoom and shadow */
+    font-size: 18px; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
   }
   
-  /* The circles on the timeline */
+
   .container::after {
     content: '';
     position: absolute;
-    width: 30px; /* Larger circle */
-    height: 30px; /* Larger circle */
+    width: 30px; 
+    height: 30px;
     right: -18px;
     background-color: white;
     border: 4px solid --main-color;
@@ -608,17 +545,14 @@ span{
     z-index: 1;
   }
   
-  /* Place the container to the left */
   .left {
     left: 0;
   }
   
-  /* Place the container to the right */
   .right {
     left: 50%;
   }
   
-  /* Add arrows to the left container (pointing right) */
   .left::before {
     content: " ";
     height: 0;
@@ -632,7 +566,6 @@ span{
     border-color: transparent transparent transparent white;
   }
   
-  /* Add arrows to the right container (pointing left) */
   .right::before {
     content: " ";
     height: 0;
@@ -646,46 +579,44 @@ span{
     border-color: transparent white transparent transparent;
   }
   
-  /* Fix the circle for containers on the right side */
+
   .right::after {
     left: -16px;
   }
   
-  /* The actual content */
   .content {
     padding: 20px 30px;
     background-color: black;
     position: relative;
     border-radius: 6px;
-    font-size: 18px; /* Increased font size */
-    transition: transform 0.3s ease-in-out; /* Transition for zoom effect */
-    border: 2px solid var(--main-color); /* Neon border on hover */
-    box-shadow: 0 0 10px 2px var(--main-color); /* Neon glowing effect */
+    font-size: 18px; 
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 10px 2px var(--main-color); 
   }
   
-  /* Neon lighting border effect */
+  
   .content:hover {
-    border: 2px solid var(--main-color); /* Neon border on hover */
-    box-shadow: 0 0 10px 2px var(--main-color); /* Neon glowing effect */
-    transform: scale(1.05); /* Slight zoom effect */
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 10px 2px var(--main-color); 
+    transform: scale(1.05); 
   }
   
-  /* Media queries - Responsive timeline on screens less than 600px wide */
+  
   @media screen and (max-width: 600px) {
-    /* Place the timeline to the left */
     .timeline::after {
       left: 31px;
     }
   
-    /* Full-width containers */
+ 
     .container {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
-      font-size: 16px; /* Adjusted font size for smaller screens */
+      font-size: 16px; 
     }
   
-    /* Make sure that all arrows are pointing leftwards */
+   
     .container::before {
       left: 60px;
       border: medium solid white;
@@ -693,12 +624,11 @@ span{
       border-color: transparent white transparent transparent;
     }
   
-    /* Make sure all circles are at the same spot */
+  
     .left::after, .right::after {
       left: 15px;
     }
   
-    /* Make all right containers behave like the left ones */
     .right {
       left: 0%;
     }
@@ -706,7 +636,7 @@ span{
   
 
 
- /* Style for the section */
+
 .services {
     padding: 40px 20px;
     background-color: black;
@@ -725,23 +655,22 @@ span{
     justify-content: space-between;
 }
 
-/* Style for each service box */
 .service-box {
-    width: 23%; /* This ensures 4 cards in a row */
+    width: 23%;
     margin-bottom: 20px;
     background-color: black;
     border-radius: 8px;
-    border: 2px solid --main-color; /* Neon border on hover */
-    box-shadow: 0 0 10px 2px var(--main-color); /* Neon glowing effect */
+    border: 2px solid --main-color; 
+    box-shadow: 0 0 10px 2px var(--main-color);
     padding: 20px;
     text-align: center;
-    height: 300px; /* Set a fixed height */
+    height: 300px; 
 }
 
 .service-box:hover {
-    border: 2px solid var(--main-color); /* Neon border on hover */
-    box-shadow: 0 0 10px 2px var(--main-color); /* Neon glowing effect */
-    transform: scale(1.05); /* Slight zoom effect */
+    border: 2px solid var(--main-color); 
+    box-shadow: 0 0 10px 2px var(--main-color); 
+    transform: scale(1.05); 
 }
 
 .service-info h4 {
@@ -754,19 +683,19 @@ span{
     color: #555;
 }
 
-/* Responsive layout for smaller screens */
+
 @media screen and (max-width: 1024px) {
     .service-box {
-        width: 48%; /* Two cards in a row on medium screens */
-        height: 350px; /* Increase height for medium screens (laptop) */
-        margin-bottom: 30px; /* Adjust margin to reduce gap */
+        width: 48%; 
+        height: 350px;
+        margin-bottom: 30px; 
     }
 }
 
 @media screen and (max-width: 600px) {
     .service-box {
-        width: 100%; /* One card per row on small screens */
-        height: auto; /* Auto height for smaller screens */
-        margin-bottom: 20px; /* Adjust margin for small screens */
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 20px; 
     }
 }
